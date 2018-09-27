@@ -1,0 +1,76 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-avatar item-start>
+      <img src="">
+    </ion-avatar>
+
+    <ion-title>Sakshi Srivastava</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only>
+        <ion-icon name="notifications" margin-right></ion-icon>
+      </button>
+      <button ion-button icon-only>
+        <ion-icon name="chatboxes" margin-right></ion-icon>
+
+      </button>
+      <button ion-button icon-only margin-right>
+        <ion-icon name="search">
+          <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)" (ionCancel)="onCancel($event)">
+          </ion-searchbar>
+        </ion-icon>
+      </button>
+
+    </ion-buttons>
+    <!-- </ion-title> -->
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="card">
+        Inbox
+      </ion-icon>
+    </button>
+
+    <button ion-item>
+      <ion-icon name="sunny">
+        My Day
+      </ion-icon>
+    </button>
+
+    <button ion-item>
+      <ion-icon name="pizza">
+        Groceries
+      </ion-icon>
+    </button>
+
+    <button ion-item>
+      <ion-icon name="bicycle">
+        Work
+      </ion-icon>
+    </button>
+
+    <button ion-item>
+      <ion-icon name="briefcase">
+        Travel
+      </ion-icon>
+    </button>
+    <button ion-item>
+      <ion-icon name="home">
+        Family
+      </ion-icon>
+    </button>
+    <br />
+    <button ion-item navPush="CreateListPage">
+      <ion-icon name="add">
+        Create List
+      </ion-icon>
+    </button>
+  </ion-list>
+
+</ion-content>

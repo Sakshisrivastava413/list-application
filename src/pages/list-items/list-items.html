@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>List Items</ion-title>
+    <ion-buttons right>
+        <button ion-button icon-only margin-right>
+            <ion-icon name="person-add"></ion-icon>
+          </button>
+        <button ion-button icon-only margin-right (click)="presentAlert()">
+            <ion-icon name="funnel"></ion-icon>
+        </button>
+        <button ion-button icon-only margin-right>
+            <ion-icon name="settings"></ion-icon>
+          </button>
+        
+        </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list reorder="true">
+        <ion-item color="primary">
+            <ion-icon name="add" padding-right></ion-icon>
+            Add a to-do
+        </ion-item>
+        <ion-item>
+            <ion-label>visit nani house by 6pm</ion-label>
+            <ion-checkbox color="primary" checked="false"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+            <ion-label>bring green veggies</ion-label>
+            <ion-checkbox color="primary" checked="false"></ion-checkbox>
+        </ion-item>
+
+</ion-list>
+
+<ion-list>
+    <ion-item color="primary">
+        <ion-icon name="checkbox-outline" padding-right></ion-icon>
+        Show completed to-do
+    </ion-item>
+    </ion-list>
+</ion-content>

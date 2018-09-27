@@ -1,0 +1,57 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Create List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ 
+<br/>
+<h6>List Name :</h6>
+<ion-list>
+  <ion-item>
+<ion-input type="text" value=""></ion-input>
+</ion-item>
+</ion-list>
+
+<br/>
+
+<h6>List Category :</h6>
+<ion-select>
+  <ion-option>Work</ion-option>
+  <ion-option>Family</ion-option>
+  <ion-option>Grocery</ion-option>
+  <ion-option>Travel</ion-option>
+
+  <ion-option selected>Others</ion-option>
+  
+</ion-select>
+<h6>List Members :</h6>
+<ion-list>
+<ion-item>
+    <ion-avatar item-start>
+        <img src="https://lh3.googleusercontent.com/-PutdKIRdOxg/AAAAAAAAAAI/AAAAAAAAAAA/AIcfdXCww7A3DP_rfSYtElhG6ruMmQ7d9Q/s64-c-mo/photo.jpg">
+      </ion-avatar>
+      <h2>You</h2>
+      
+</ion-item>
+
+<ion-item>
+    <ion-avatar item-start>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0BEKkrgsDr7m0ymxanCGkUgiF3bMjq3Un4ESvoyq3E-IG0sVH">
+      </ion-avatar>
+      <h2>Invite people</h2>
+      
+</ion-item>
+</ion-list>
+
+<ion-footer>
+  <ion-toolbar no-padding>
+    <button ion-button block navPush="ListItemsPage">Create</button>
+  </ion-toolbar>
+</ion-footer>
+
+</ion-content>
